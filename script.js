@@ -1,7 +1,7 @@
 function minDate(dates) {
   //write you code here
 	let res = dates.map(val => new Date(val).getTime())
-	let date = res.sort((a,b)=>b-a)[0]
+	let date = res.sort((a,b)=>a-b)[0];
 	return new Date(date).toLocaleDateString();
 }
 
